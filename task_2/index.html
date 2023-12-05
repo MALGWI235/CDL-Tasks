@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chat App UI</title>
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+        <div class="grid_container">
+            <div class="container">
+                <div class="chat">
+                    <div class="chat-header">
+                        <div class="top-bar"></div>
+                        <div class="profile">
+                            <div class="left">
+                                <img src="images/back-arrow-black.svg" class="arrow" />
+                                <img src="images/avatar.jpg" class="avatar">
+                                <h2>Samuel Green</h2>
+                                <span>Available to walk</span>
+                            </div>
+                            <div class="right">
+                                <img src="images/options-white.svg" class="options" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-l">
+                            <div class="mess mess-l">
+                                <p>That sounds great. I’d<br> be happy with that.</p>
+                            </div>
+                        </div>
+                        <div class="chat-l">
+                            <div class="mess mess-l">
+                                <p>Could you send over some<br> pictures of your dog, please?</p>
+                            </div>
+                        </div>
+                        <div class="img_wrapper">
+                            <img src="/images/dog-image-1.jpg" alt="pic_1" class="dog_pics" />
+                            <img src="/images/dog-image-2.jpg" alt="pic_2" class="dog_pics" />
+                            <img src="/images/dog-image-3.jpg" alt="pic_3" class="dog_pics" />
+                        </div>
+                        <div class="chat-r">
+                            <div class="sp"></div>
+                            <div class="mess mess-r">
+                                <p>Here are a few pictures. She’s<br />
+                                    a happy girl!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="chat-r">
+                            <div class="sp"></div>
+                            <div class="mess mess-r">
+                                <p>Can you make it?</p>
+                            </div>
+                        </div>
+                        <div class="chat-l">
+                            <div class="mess mess-l">
+                                <p>She looks so happy! The time<br> we discussed works. How<br/>
+                                    long shall I take her out for?</p>
+                            </div>
+                        </div>
+                        <label class="button" for="minute">
+                            <input type="radio" id="minute" name="cost_per_time" /> 
+                            <span class="subheading">30 minute walk</span> <span class="btn-header">$29</span>
+                        </label> <br>
+                        <label class="button" for="hour">
+                            <input type="radio" id="hour" name="cost_per_time" />
+                            <span class="subheading">1 hour walk</span> <span class="btn-header">$49</span>
+                        </label>
+                        
+                    </div>
+                    <div class="chat-footer">
+                        <input type="text" placeholder="Type a message" class="text-box"/>
+                        <div class="send">
+                            <img src="images/send-black.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-passage">
+                <h1 class="header">Simple booking</h1>
+                <p class="paragraph">
+                    Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+                    discuss arrangements and make bookings. Once the walk has been completed you can rate 
+                    your walker and book again all through the chat.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

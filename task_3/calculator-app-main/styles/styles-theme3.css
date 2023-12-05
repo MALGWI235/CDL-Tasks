@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "League Spartan" ;
+    src: url(/calculator-app-main/fonts/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: "League Spartan";
+    background-color: hsl(268, 75%, 9%);
+    font-weight: 700;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator_header {
+   display: flex;
+   flex-direction: row;
+}
+
+.left, .right {
+    display: inline-flex;
+    flex: 1; 
+    color: hsl(52, 100%, 62%);
+}
+
+.left {
+    margin-right: 135px;
+    margin-left: 10px;
+}
+
+.right {
+    display: inline-flex;
+    margin-right: 10px;
+    margin-left: 150px;
+    font-size: small;
+}
+
+.container {
+    background-color: hsl(268, 75%, 9%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator_display input {
+    background-color: hsl(268, 71%, 12%);
+    display: flex;
+    text-align: right;
+    border: none;
+    width: 455px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    font-family: "League Spartan";
+    font-size: 32px;
+    font-weight: bold;
+    color: hsl(52, 100%, 62%);
+}
+
+.calculator_body {
+    background-color: hsl(268, 71%, 12%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 455px;
+}
+
+
+.calculator_body input.btn {
+    border: 0px;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    margin: 5px;
+    font-size: 32px;
+    font-family: "League Spartan";
+    font-weight: bold;
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: inset 0px -3px hsl(290, 70%, 36%);
+    border-radius: 10px;
+}
+
+input.color2_btn_long {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: inset 0px -3px hsl(285, 91%, 52%);
+    border: 0px;
+    border-radius: 10px;
+    width: 215px;
+    height: 40px;
+    align-items: center;
+    margin: 5px;
+    color: white;
+    font-size: 32px;
+    font-family: "League Spartan";
+    font-weight: bold;
+}
+
+input.color2_btn {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: inset 0px -3px hsl(285, 91%, 52%);
+    border: 0px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    margin: 5px;
+    color: white;
+    font-size: 32px;
+    font-family: "League Spartan";
+    font-weight: bold;
+}
+
+form input.color3_btn {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: inset 0px -3px hsl(177, 92%, 70%);
+    border: 0px;
+    border-radius: 10px;
+    width: 215px;
+    height: 40px;
+    align-items: center;
+    margin: 5px;
+    color: hsl(198, 20%, 13%);
+    font-size: 32px;
+    font-family: "League Spartan";
+    font-weight: bold;
+}
+
+
+.calculator_body input:hover {
+    background-color: hsl(268, 47%, 26%);
+}
+
+input.color2_btn:hover {
+    background-color: hsl(281, 89%, 31%);
+}
+
+input.color2_btn_long:hover {
+    background-color: hsl(281, 89%, 31%);
+}
+
+input.color3_btn:hover {
+    background-color: hsl(176, 100%, 49%);
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="/calculator-app-main/script/main.js"></script>
+  <link id="color-scheme" rel="stylesheet" href="/calculator-app-main/styles/styles-theme0.css" />
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body class="flex_container">
+  <div class="calculator_header">
+    <div class="left">
+      <p>calc</p>
+    </div>
+    <div class="right">
+      <p>THEME</p>
+      <input id="style-slider" type="range" name="theme" value="1" min="1" max="3" step="1">
+    </div>
+  </div>
+  <div class="container">
+      <form class="wrapper">
+        <div class="calculator_display">
+          <input type="text" name="display" id="display"/>
+        </div>
+        
+        <div class="calculator_body">
+          <div>
+            <input class="btn" type="button" value= "7" onclick="appendToDisplay('7')" />
+            <input class="btn" type="button" value= "8" onclick="appendToDisplay('8')" />
+            <input class="btn" type="button" value= "9" onclick="appendToDisplay('9')" />
+            <input type="button" value= "DEL" class="color2_btn" onclick="removeLastValue()"/>
+          </div>
+          <div>
+            <input class="btn" type="button" value= "4" onclick="appendToDisplay('4')" />
+            <input class="btn" type="button" value= "5" onclick="appendToDisplay('5')" />
+            <input class="btn" type="button" value= "6" onclick="appendToDisplay('6')" />
+            <input class="btn" type="button" value= "+" onclick="appendOperation('+')" />
+          </div>
+          <div>
+            <input class="btn" type="button" value= "1" onclick="appendToDisplay('1')" />
+            <input class="btn" type="button" value= "2" onclick="appendToDisplay('2')" />
+            <input class="btn" type="button" value= "3" onclick="appendToDisplay('3')" />
+            <input class="btn" type="button" value= "-" onclick="appendOperation('-')" />
+          </div>
+          <div>
+            <input class="btn" type="button" value= "." onclick="appendToDisplay('.')" />
+            <input class="btn" type="button" value= "0" onclick="appendToDisplay('0')" />
+            <input class="btn" type="button" value= "/" onclick="appendOperation('/')" />
+            <input class="btn" type="button" value= "x" onclick="appendOperation('x')" />
+          </div>
+          <div>
+            <input type="button" value= "RESET"
+                   class="long_btn color2_btn_long" onclick="clearDisplay()" />
+            <input type="button" value= "=" 
+                   class="long_btn color3_btn" onclick="calculate()"/>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+ 
+</body>
+</html>
