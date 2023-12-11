@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Manrope;
+    src: url('/advice-generator-app-main/fonts/Manrope-VariableFont_wght.ttf');
+}
+
+@media (max-width: 330px) {
+    #dice {
+        left: 130px;
+    }
+}
+body {
+    background-color: hsl(218, 23%, 16%);
+    font-family: Manrope, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90dvh;
+
+}
+
+.card {
+    width: 320px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+}
+
+#advice-id {
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+#advice-body {
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#divider {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dice_wrapper {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    bottom: -20px;
+    left: 165px;
+    padding: 10px;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+}
+
+#dice {
+    position: relative;
+    border-radius: 2px;
+}
