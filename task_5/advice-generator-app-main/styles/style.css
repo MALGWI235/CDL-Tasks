@@ -71,3 +71,7 @@ body {
     position: relative;
     border-radius: 2px;
 }
+
+.dice_wrapper:hover {
+    box-shadow: hsla(150, 100%, 66%, 0.9) 0 0 20px 5px;
+}
